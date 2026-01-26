@@ -5,46 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Claire L. Adida</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
             font-family: Georgia, 'Times New Roman', serif;
             line-height: 1.6;
             color: #333;
             background-color: #fff;
-            margin: 0;
-            padding: 20px;
+            padding: 40px 20px;
         }
         
-        .container {
-            max-width: 800px;
+        .wrapper {
+            max-width: 1100px;
             margin: 0 auto;
+            display: flex;
+            gap: 30px;
+        }
+        
+        .main-content {
+            flex: 1;
+            max-width: 750px;
+        }
+        
+        .sidebar {
+            width: 180px;
+            flex-shrink: 0;
+            padding-top: 78px;
         }
         
         h1 {
-            font-size: 2em;
+            font-size: 2.5em;
             font-weight: normal;
-            margin: 0 0 20px 0;
+            margin-bottom: 20px;
             padding-bottom: 15px;
             border-bottom: 2px solid #333;
         }
         
         nav {
-            margin: 20px 0 40px 0;
+            position: sticky;
+            top: 40px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 3px solid #333;
+            margin-top: 0;
         }
         
         nav a {
+            display: block;
             color: #333;
             text-decoration: none;
-            margin-right: 15px;
-            font-size: 1em;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+            transition: color 0.3s;
         }
         
         nav a:hover {
             color: #8B0000;
-            text-decoration: underline;
         }
         
         .info {
-            margin-bottom: 30px;
+            margin: 30px 0;
         }
         
         .info p {
@@ -57,27 +81,9 @@
         }
         
         .bio {
-            margin: 30px 0;
+            margin: 30px 0 50px 0;
             font-size: 1.05em;
-            line-height: 1.7;
-        }
-        
-        .quick-links {
-            margin: 30px 0;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-left: 3px solid #333;
-        }
-        
-        .quick-links a {
-            display: block;
-            color: #333;
-            text-decoration: none;
-            margin: 8px 0;
-        }
-        
-        .quick-links a:hover {
-            color: #8B0000;
+            line-height: 1.8;
         }
         
         .gallery {
@@ -96,7 +102,7 @@
         }
         
         footer {
-            margin-top: 50px;
+            margin-top: 60px;
             padding-top: 20px;
             border-top: 1px solid #ddd;
             text-align: center;
@@ -106,42 +112,46 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Claire L. Adida</h1>
-        
-        <nav>
-            <a href="#home">Home</a> |
-            <a href="cv.pdf">CV</a> |
-            <a href="articles.html">Articles</a> |
-            <a href="books.html">Books</a> |
-            <a href="teaching.html">Teaching</a> |
-            <a href="https://scholar.google.com/citations?user=Yf5lW8oAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a>
-        </nav>
-        
-        <div class="info">
-            <p><strong>Stanford University</strong></p>
-            <p>Senior Fellow, Center for Democracy, Development, and the Rule of Law</p>
-            <p>Freeman Spogli Institute</p>
-            <p>Professor (by courtesy), Political Science Department</p>
-            <p style="margin-top: 15px;"><a href="mailto:cadida@stanford.edu" class="email">cadida@stanford.edu</a></p>
+    <div class="wrapper">
+        <div class="main-content">
+            <h1>Claire L. Adida</h1>
+            
+            <div class="info">
+                <p><strong>Stanford University</strong></p>
+                <p>Senior Fellow, Center for Democracy, Development, and the Rule of Law</p>
+                <p>Freeman Spogli Institute</p>
+                <p>Professor (by courtesy), Political Science Department</p>
+                <p style="margin-top: 15px;"><a href="mailto:cadida@stanford.edu" class="email">cadida@stanford.edu</a></p>
+            </div>
+            
+            <div class="bio">
+                <p>I study how countries manage new and existing forms of diversity. I have applied this question to the study of immigrant exclusion and ethnic politics in urban West Africa, in France, and in the United States. My current research investigates the conditions that reduce out-group discrimination, and the strategies vulnerable minorities employ to navigate discriminatory environments. My work has been funded by the National Science Foundation, the Bill & Melinda Gates Foundation, the Hellman Foundation, and the Evidence in Governance and Politics Group.</p>
+            </div>
+            
+            <div class="gallery">
+                <img src="uploads/1/2/6/5/12650228/5051715.jpg" alt="Research photo 1">
+                <img src="uploads/1/2/6/5/12650228/3508109.jpg" alt="Research photo 2">
+                <img src="uploads/1/2/6/5/12650228/3496526.jpg" alt="Research photo 3">
+                <img src="uploads/1/2/6/5/12650228/5268853.jpg" alt="Research photo 4">
+                <img src="uploads/1/2/6/5/12650228/5965411.jpg" alt="Research photo 5">
+                <img src="uploads/1/2/6/5/12650228/688247.jpg" alt="Research photo 6">
+            </div>
+            
+            <footer>
+                <p>&copy; 2026 Claire L. Adida</p>
+            </footer>
         </div>
         
-        <div class="bio">
-            <p>I study how countries manage new and existing forms of diversity. I have applied this question to the study of immigrant exclusion and ethnic politics in urban West Africa, in France, and in the United States. My current research investigates the conditions that reduce out-group discrimination, and the strategies vulnerable minorities employ to navigate discriminatory environments. My work has been funded by the National Science Foundation, the Bill & Melinda Gates Foundation, the Hellman Foundation, and the Evidence in Governance and Politics Group.</p>
+        <div class="sidebar">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="cv.pdf">CV</a>
+                <a href="articles.html">Articles</a>
+                <a href="books.html">Books</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="https://scholar.google.com/citations?user=Yf5lW8oAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a>
+            </nav>
         </div>
-        
-        <div class="gallery">
-            <img src="uploads/1/2/6/5/12650228/5051715.jpg" alt="Research photo">
-            <img src="uploads/1/2/6/5/12650228/3508109.jpg" alt="Research photo">
-            <img src="uploads/1/2/6/5/12650228/3496526.jpg" alt="Research photo">
-            <img src="uploads/1/2/6/5/12650228/5268853.jpg" alt="Research photo">
-            <img src="uploads/1/2/6/5/12650228/5965411.jpg" alt="Research photo">
-            <img src="uploads/1/2/6/5/12650228/688247.jpg" alt="Research photo">
-        </div>
-        
-        <footer>
-            <p>&copy; 2026 Claire L. Adida</p>
-        </footer>
     </div>
 </body>
 </html>
