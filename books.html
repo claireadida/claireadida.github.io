@@ -5,18 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books - Claire L. Adida</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
             font-family: Georgia, 'Times New Roman', serif;
             line-height: 1.6;
             color: #333;
             background-color: #fff;
-            margin: 0;
-            padding: 20px;
+            padding: 40px 20px;
         }
         
-        .container {
-            max-width: 800px;
+        .wrapper {
+            max-width: 1100px;
             margin: 0 auto;
+            display: flex;
+            gap: 30px;
+        }
+        
+        .main-content {
+            flex: 1;
+            max-width: 700px;
+        }
+        
+        .sidebar {
+            width: 180px;
+            flex-shrink: 0;
+            padding-top: 78px;
         }
         
         h1 {
@@ -28,19 +46,25 @@
         }
         
         nav {
-            margin: 20px 0 40px 0;
+            position: sticky;
+            top: 40px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 3px solid #333;
+            margin-top: 0;
         }
         
         nav a {
+            display: block;
             color: #333;
             text-decoration: none;
-            margin-right: 15px;
-            font-size: 1em;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+            transition: color 0.3s;
         }
         
         nav a:hover {
             color: #8B0000;
-            text-decoration: underline;
         }
         
         .book {
@@ -127,103 +151,107 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Claire L. Adida</h1>
-        
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="cv.pdf">CV</a> |
-            <a href="articles.html">Articles</a> |
-            <a href="books.html">Books</a> |
-            <a href="teaching.html">Teaching</a> |
-            <a href="https://scholar.google.com/citations?user=Yf5lW8oAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a>
-        </nav>
-        
-        <div class="book">
-            <div class="book-content">
-                <div class="book-cover">
-                    <a href="https://www.hup.harvard.edu/books/9780674979697" target="_blank">
-                        <img src="uploads/1/2/6/5/12650228/published/hup-adida-muslim.jpg" alt="Why Muslim Integration Fails in Christian-Heritage Societies">
-                    </a>
-                </div>
-                <div class="book-info">
-                    <div class="book-title">
+    <div class="wrapper">
+        <div class="main-content">
+            <h1>Claire L. Adida</h1>
+            
+            <div class="book">
+                <div class="book-content">
+                    <div class="book-cover">
                         <a href="https://www.hup.harvard.edu/books/9780674979697" target="_blank">
-                            Why Muslim Integration Fails in Christian-Heritage Societies
+                            <img src="uploads/1/2/6/5/12650228/published/hup-adida-muslim.jpg" alt="Why Muslim Integration Fails in Christian-Heritage Societies">
                         </a>
                     </div>
-                    <div>with David D. Laitin and Marie-Anne Valfort</div>
-                    <div>Harvard University Press, 2016</div>
-                    
-                    <div class="book-details">
-                        <p><strong>Reviewed by:</strong> Perspectives on Politics Review Symposium 
-                        (<a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/discussion-of-claire-l-adida-david-d-laitin-and-marieanne-valforts-why-muslim-integration-fails-in-christianheritage-societies/114812D25C65F92932BF62ADC3228687" target="_blank">Jamal</a>, 
-                        <a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/discussion-of-claire-l-adida-david-d-laitin-and-marieanne-valforts-why-muslim-integration-fails-in-christianheritage-societies/E1C418FC1596C1AD468F81251FC595E3" target="_blank">Norton</a>, 
-                        <a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/discussion-of-claire-l-adida-david-d-laitin-and-marieanne-valforts-why-muslim-integration-fails-in-christianheritage-societies/C1B7ACE5F3617DB6ED8C6A15525E7710" target="_blank">Sinno</a>) and our 
-                        <a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/response-and-rejoinders-to-symposium-on-why-muslim-integration-fails-in-christianheritage-societies/104C830C78C3E5E979D3D198DA141BE2" target="_blank">response/rejoinders</a>; 
-                        <a href="https://www.aeaweb.org/articles?id=10.1257/jel.20171415" target="_blank">Journal of Economic Literature</a>; 
-                        <a href="http://www.ft.com/cms/s/0/188fed1c-c5a6-11e5-808f-8231cd71622e.html" target="_blank">Financial Times</a>; 
-                        <a href="http://weekspopulation.blogspot.fr/2016/02/why-muslim-integration-fails-in.html" target="_blank">Dr. John Weeks</a>; 
-                        <a href="http://marginalrevolution.com/marginalrevolution/2015/12/why-muslim-integration-fails-in-christian-heritage-societies.html" target="_blank">Tyler Cowen</a> 
-                        (our <a href="http://marginalrevolution.com/marginalrevolution/2015/12/claire-adida-david-laitin-and-respond-to-my-review.html" target="_blank">response</a>); 
-                        <a href="http://newramblerreview.com/book-reviews/economics/is-french-islam-an-oxymoron" target="_blank">Aziz Huq</a>; 
-                        <a href="uploads/1/2/6/5/12650228/alvbook-ethnicracialstudiesreview.pdf" target="_blank">Ethnic and Racial Studies</a>; 
-                        <a href="https://doi.org/10.1093/socrel/srx002" target="_blank">Sociology of Religion</a>; 
-                        <a href="https://doi.org/10.1111/rirt.12811" target="_blank">Reviews in Religion and Theology</a>; 
-                        <a href="https://doi.org/10.1111/1468-2346.12671" target="_blank">International Affairs</a>; 
-                        <a href="https://www.cambridge.org/core/journals/journal-of-race-ethnicity-and-politics/article/abs/why-muslim-integration-fails-in-christianheritage-societies-edited-by-claire-l-adida-david-d-laitinand-marieanne-valfort-cambridge-harvard-university-press-2016-264-pp-4500-cloth/1AB9E57F3E07C59FD20901440F4B80C5" target="_blank">Journal of Race, Ethnicity, and Politics</a>; 
-                        <a href="https://academic.oup.com/jis/article-abstract/29/1/135/4104487?redirectedFrom=fulltext" target="_blank">Journal of Islamic Studies</a>.</p>
+                    <div class="book-info">
+                        <div class="book-title">
+                            <a href="https://www.hup.harvard.edu/books/9780674979697" target="_blank">
+                                Why Muslim Integration Fails in Christian-Heritage Societies
+                            </a>
+                        </div>
+                        <div>with David D. Laitin and Marie-Anne Valfort</div>
+                        <div>Harvard University Press, 2016</div>
                         
-                        <p><strong>Media appearances:</strong> 
-                        <a href="https://www.foreignaffairs.com/articles/united-states/2016-04-26/dont-fear-muslim-immigrants" target="_blank">Foreign Affairs</a>, 
-                        <a href="http://www.researchonreligion.org/islam/claire-adida-on-discrimination-towards-muslims-in-france" target="_blank">Research on Religion</a>, 
-                        <a href="https://www.youtube.com/watch?v=aPbAeF50dEA" target="_blank">The Hard Line</a>, 
-                        <a href="http://www.abc.net.au/radionational/programs/religionandethicsreport/after-another-attack-in-france2c-what-prospects-for-muslim-int/6587382" target="_blank">Australian Broadcasting Service</a>, 
-                        <a href="https://www.washingtonpost.com/news/monkey-cage/wp/2015/11/25/can-france-and-other-mostly-christian-societies-integrate-its-muslims-this-new-book-shows-what-must-be-done/" target="_blank">Monkey Cage Q&A</a>, 
-                        <a href="https://www.washingtonpost.com/blogs/monkey-cage/wp/2015/01/14/terror-in-france-implications-for-muslim-integration/" target="_blank">Monkey Cage</a>, 
-                        <a href="https://www.nationalgeographic.com/science/phenomena/2010/11/22/fake-cvs-reveal-discrimination-against-muslims-in-french-job-market/" target="_blank">National Geographic</a>.</p>
+                        <div class="book-details">
+                            <p><strong>Reviewed by:</strong> Perspectives on Politics Review Symposium 
+                            (<a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/discussion-of-claire-l-adida-david-d-laitin-and-marieanne-valforts-why-muslim-integration-fails-in-christianheritage-societies/114812D25C65F92932BF62ADC3228687" target="_blank">Jamal</a>, 
+                            <a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/discussion-of-claire-l-adida-david-d-laitin-and-marieanne-valforts-why-muslim-integration-fails-in-christianheritage-societies/E1C418FC1596C1AD468F81251FC595E3" target="_blank">Norton</a>, 
+                            <a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/discussion-of-claire-l-adida-david-d-laitin-and-marieanne-valforts-why-muslim-integration-fails-in-christianheritage-societies/C1B7ACE5F3617DB6ED8C6A15525E7710" target="_blank">Sinno</a>) and our 
+                            <a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/response-and-rejoinders-to-symposium-on-why-muslim-integration-fails-in-christianheritage-societies/104C830C78C3E5E979D3D198DA141BE2" target="_blank">response/rejoinders</a>; 
+                            <a href="https://www.aeaweb.org/articles?id=10.1257/jel.20171415" target="_blank">Journal of Economic Literature</a>; 
+                            <a href="http://www.ft.com/cms/s/0/188fed1c-c5a6-11e5-808f-8231cd71622e.html" target="_blank">Financial Times</a>; 
+                            <a href="http://weekspopulation.blogspot.fr/2016/02/why-muslim-integration-fails-in.html" target="_blank">Dr. John Weeks</a>; 
+                            <a href="http://marginalrevolution.com/marginalrevolution/2015/12/why-muslim-integration-fails-in-christian-heritage-societies.html" target="_blank">Tyler Cowen</a> 
+                            (our <a href="http://marginalrevolution.com/marginalrevolution/2015/12/claire-adida-david-laitin-and-respond-to-my-review.html" target="_blank">response</a>); 
+                            <a href="http://newramblerreview.com/book-reviews/economics/is-french-islam-an-oxymoron" target="_blank">Aziz Huq</a>; 
+                            <a href="uploads/1/2/6/5/12650228/alvbook-ethnicracialstudiesreview.pdf" target="_blank">Ethnic and Racial Studies</a>; 
+                            <a href="https://doi.org/10.1093/socrel/srx002" target="_blank">Sociology of Religion</a>; 
+                            <a href="https://doi.org/10.1111/rirt.12811" target="_blank">Reviews in Religion and Theology</a>; 
+                            <a href="https://doi.org/10.1111/1468-2346.12671" target="_blank">International Affairs</a>; 
+                            <a href="https://www.cambridge.org/core/journals/journal-of-race-ethnicity-and-politics/article/abs/why-muslim-integration-fails-in-christianheritage-societies-edited-by-claire-l-adida-david-d-laitinand-marieanne-valfort-cambridge-harvard-university-press-2016-264-pp-4500-cloth/1AB9E57F3E07C59FD20901440F4B80C5" target="_blank">Journal of Race, Ethnicity, and Politics</a>; 
+                            <a href="https://academic.oup.com/jis/article-abstract/29/1/135/4104487?redirectedFrom=fulltext" target="_blank">Journal of Islamic Studies</a>.</p>
+                            
+                            <p><strong>Media appearances:</strong> 
+                            <a href="https://www.foreignaffairs.com/articles/united-states/2016-04-26/dont-fear-muslim-immigrants" target="_blank">Foreign Affairs</a>, 
+                            <a href="http://www.researchonreligion.org/islam/claire-adida-on-discrimination-towards-muslims-in-france" target="_blank">Research on Religion</a>, 
+                            <a href="https://www.youtube.com/watch?v=aPbAeF50dEA" target="_blank">The Hard Line</a>, 
+                            <a href="http://www.abc.net.au/radionational/programs/religionandethicsreport/after-another-attack-in-france2c-what-prospects-for-muslim-int/6587382" target="_blank">Australian Broadcasting Service</a>, 
+                            <a href="https://www.washingtonpost.com/news/monkey-cage/wp/2015/11/25/can-france-and-other-mostly-christian-societies-integrate-its-muslims-this-new-book-shows-what-must-be-done/" target="_blank">Monkey Cage Q&A</a>, 
+                            <a href="https://www.washingtonpost.com/blogs/monkey-cage/wp/2015/01/14/terror-in-france-implications-for-muslim-integration/" target="_blank">Monkey Cage</a>, 
+                            <a href="https://www.nationalgeographic.com/science/phenomena/2010/11/22/fake-cvs-reveal-discrimination-against-muslims-in-french-job-market/" target="_blank">National Geographic</a>.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="book">
-            <div class="book-content">
-                <div class="book-cover">
-                    <a href="http://www.cambridge.org/us/academic/subjects/politics-international-relations/african-government-politics-and-policy/immigrant-exclusion-and-insecurity-africa-coethnic-strangers" target="_blank">
-                        <img src="uploads/1/2/6/5/12650228/published/cup-adida-immigrant.jpg" alt="Immigrant Exclusion and Insecurity in Africa">
-                    </a>
-                </div>
-                <div class="book-info">
-                    <div class="book-title">
+            
+            <div class="book">
+                <div class="book-content">
+                    <div class="book-cover">
                         <a href="http://www.cambridge.org/us/academic/subjects/politics-international-relations/african-government-politics-and-policy/immigrant-exclusion-and-insecurity-africa-coethnic-strangers" target="_blank">
-                            Immigrant Exclusion and Insecurity in Africa: Coethnic Strangers
+                            <img src="uploads/1/2/6/5/12650228/published/cup-adida-immigrant.jpg" alt="Immigrant Exclusion and Insecurity in Africa">
                         </a>
                     </div>
-                    <div>Cambridge University Press, 2014</div>
-                    
-                    <div class="book-details">
-                        <p><strong>Reviewed by:</strong> <a href="https://intellectdiscover.com/content/journals/10.1386/cjmc.5.2-3.339_5" target="_blank">Crossings: Journal of Migration and Culture</a>; 
-                        <a href="https://www.cambridge.org/core/journals/journal-of-modern-african-studies/article/abs/immigrant-exclusion-and-insecurity-in-africa-coethnic-strangers-by-claire-l-adida-new-york-cambridge-university-press-2014-pp-175-55-hbk/679F3C3A2C4743528049CDB5E3D0AFF2" target="_blank">Journal of Modern African Studies</a>; 
-                        <a href="https://www.jstor.org/stable/44715393" target="_blank">International Journal of African Historical Studies</a>; 
-                        <a href="http://www.psqonline.org/article.cfm?IDArticle=19525" target="_blank">Political Science Quarterly</a>.</p>
+                    <div class="book-info">
+                        <div class="book-title">
+                            <a href="http://www.cambridge.org/us/academic/subjects/politics-international-relations/african-government-politics-and-policy/immigrant-exclusion-and-insecurity-africa-coethnic-strangers" target="_blank">
+                                Immigrant Exclusion and Insecurity in Africa: Coethnic Strangers
+                            </a>
+                        </div>
+                        <div>Cambridge University Press, 2014</div>
                         
-                        <p><strong>Media appearances:</strong> 
-                        <a href="https://thejanetfostershow.libsyn.com/ep13-africa-immigration-trends" target="_blank">The Janet Foster Show</a>, 
-                        <a href="https://www.washingtonpost.com/news/monkey-cage/wp/2014/06/03/scapegoating-africas-immigrants/" target="_blank">Monkey Cage</a>, 
-                        <a href="http://africasacountry.com/2016/10/many-untold-migration-stories/" target="_blank">Africa is a Country</a>, 
-                        <a href="http://www.voanews.com/a/3588587.html" target="_blank">Daybreak Africa</a> (~15 min. in), 
-                        <a href="http://www.aaihs.org/immigrant-exclusion-and-insecurity-in-africa-an-interview-with-claire-l-adida/" target="_blank">African American Intellectual History Society</a>.</p>
-                        
-                        <p><strong>Awards:</strong> APCG 2014 Best Book Honorable Mention.</p>
+                        <div class="book-details">
+                            <p><strong>Reviewed by:</strong> <a href="https://intellectdiscover.com/content/journals/10.1386/cjmc.5.2-3.339_5" target="_blank">Crossings: Journal of Migration and Culture</a>; 
+                            <a href="https://www.cambridge.org/core/journals/journal-of-modern-african-studies/article/abs/immigrant-exclusion-and-insecurity-in-africa-coethnic-strangers-by-claire-l-adida-new-york-cambridge-university-press-2014-pp-175-55-hbk/679F3C3A2C4743528049CDB5E3D0AFF2" target="_blank">Journal of Modern African Studies</a>; 
+                            <a href="https://www.jstor.org/stable/44715393" target="_blank">International Journal of African Historical Studies</a>; 
+                            <a href="http://www.psqonline.org/article.cfm?IDArticle=19525" target="_blank">Political Science Quarterly</a>.</p>
+                            
+                            <p><strong>Media appearances:</strong> 
+                            <a href="https://thejanetfostershow.libsyn.com/ep13-africa-immigration-trends" target="_blank">The Janet Foster Show</a>, 
+                            <a href="https://www.washingtonpost.com/news/monkey-cage/wp/2014/06/03/scapegoating-africas-immigrants/" target="_blank">Monkey Cage</a>, 
+                            <a href="http://africasacountry.com/2016/10/many-untold-migration-stories/" target="_blank">Africa is a Country</a>, 
+                            <a href="http://www.voanews.com/a/3588587.html" target="_blank">Daybreak Africa</a> (~15 min. in), 
+                            <a href="http://www.aaihs.org/immigrant-exclusion-and-insecurity-in-africa-an-interview-with-claire-l-adida/" target="_blank">African American Intellectual History Society</a>.</p>
+                            
+                            <p><strong>Awards:</strong> APCG 2014 Best Book Honorable Mention.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            
+            <footer>
+                <p>&copy; 2026 Claire L. Adida</p>
+            </footer>
         </div>
         
-        <footer>
-            <p>&copy; 2026 Claire L. Adida</p>
-        </footer>
+        <div class="sidebar">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="cv.pdf">CV</a>
+                <a href="articles.html">Articles</a>
+                <a href="books.html">Books</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="https://scholar.google.com/citations?user=Yf5lW8oAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a>
+            </nav>
+        </div>
     </div>
 </body>
 </html>
