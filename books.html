@@ -1,238 +1,222 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - Claire L. Adida</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 2em;
+            font-weight: normal;
+            margin: 0 0 20px 0;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #333;
+        }
+        
+        nav {
+            margin: 20px 0 40px 0;
+        }
+        
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 1em;
+        }
+        
+        nav a:hover {
+            color: #8B0000;
+            text-decoration: underline;
+        }
+        
+        .book {
+            margin: 40px 0;
+            padding: 30px 0;
+            border-top: 1px solid #ddd;
+        }
+        
+        .book:first-of-type {
+            border-top: none;
+        }
+        
+        .book-content {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+        
+        .book-cover {
+            flex-shrink: 0;
+        }
+        
+        .book-cover img {
+            width: 150px;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+        
+        .book-info {
+            flex: 1;
+        }
+        
+        .book-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .book-title a {
+            color: #8B0000;
+            text-decoration: none;
+        }
+        
+        .book-title a:hover {
+            text-decoration: underline;
+        }
+        
+        .book-details {
+            margin-top: 15px;
+            line-height: 1.8;
+        }
+        
+        .book-details p {
+            margin: 8px 0;
+        }
+        
+        .book-details a {
+            color: #8B0000;
+            text-decoration: none;
+        }
+        
+        .book-details a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 600px) {
+            .book-content {
+                flex-direction: column;
+            }
+            
+            .book-cover img {
+                width: 120px;
+            }
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Books - Claire L. Adida&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: Georgia, 'Times New Roman', serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 800px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: normal;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 0 20px 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid #333;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>nav {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px 0 40px 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>nav a {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-right: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1em;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>nav a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #8B0000;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: underline;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.book {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 40px 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid #ddd;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.book:first-of-type {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-top: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.book-content {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: flex-start;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.book-cover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-shrink: 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.book-cover img {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 150px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ddd;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.book-info {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex: 1;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.book-title {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.book-title a {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #8B0000;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.book-title a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: underline;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.book-details {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.8;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.book-details p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 8px 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.book-details a {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #8B0000;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.book-details a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: underline;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-top: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid #ddd;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #666;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.9em;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 600px) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>.book-content {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.book-cover img {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>width: 120px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Claire L. Adida&lt;/h1&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="index.html"&gt;Home&lt;/a&gt; |</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="cv.pdf"&gt;CV&lt;/a&gt; |</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="articles.html"&gt;Articles&lt;/a&gt; |</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="books.html"&gt;Books&lt;/a&gt; |</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="teaching.html"&gt;Teaching&lt;/a&gt; |</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="https://scholar.google.com/citations?user=Yf5lW8oAAAAJ&amp;hl=en&amp;authuser=1" target="_blank"&gt;Google Scholar&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/nav&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="book"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="book-content"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="book-cover"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="http://www.hup.harvard.edu/catalog.php?isbn=9780674504929" target="_blank"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="uploads/1/2/6/5/12650228/published/hup-adida-muslim.jpg" alt="Why Muslim Integration Fails in Christian-Heritage Societies"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="book-info"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="book-title"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="http://www.hup.harvard.edu/catalog.php?isbn=9780674504929" target="_blank"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>Why Muslim Integration Fails in Christian-Heritage Societies</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;with David D. Laitin and Marie-Anne Valfort&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;Harvard University Press, 2016&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="book-details"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt;&lt;strong&gt;Reviewed by:&lt;/strong&gt; Perspectives on Politics Review Symposium<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>(&lt;a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/discussion-of-claire-l-adida-david-d-laitin-and-marieanne-valforts-why-muslim-integration-fails-in-christianheritage-societies/114812D25C65F92932BF62ADC3228687" target="_blank"&gt;Jamal&lt;/a&gt;,<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/discussion-of-claire-l-adida-david-d-laitin-and-marieanne-valforts-why-muslim-integration-fails-in-christianheritage-societies/E1C418FC1596C1AD468F81251FC595E3" target="_blank"&gt;Norton&lt;/a&gt;,<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/discussion-of-claire-l-adida-david-d-laitin-and-marieanne-valforts-why-muslim-integration-fails-in-christianheritage-societies/C1B7ACE5F3617DB6ED8C6A15525E7710" target="_blank"&gt;Sinno&lt;/a&gt;) and our<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/response-and-rejoinders-to-symposium-on-why-muslim-integration-fails-in-christianheritage-societies/104C830C78C3E5E979D3D198DA141BE2" target="_blank"&gt;response/rejoinders&lt;/a&gt;;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="https://www.aeaweb.org/articles?id=10.1257/jel.20171415" target="_blank"&gt;Journal of Economic Literature&lt;/a&gt;;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="http://www.ft.com/cms/s/0/188fed1c-c5a6-11e5-808f-8231cd71622e.html" target="_blank"&gt;Financial Times&lt;/a&gt;;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="http://weekspopulation.blogspot.fr/2016/02/why-muslim-integration-fails-in.html" target="_blank"&gt;Dr. John Weeks&lt;/a&gt;;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="http://marginalrevolution.com/marginalrevolution/2015/12/why-muslim-integration-fails-in-christian-heritage-societies.html" target="_blank"&gt;Tyler Cowen&lt;/a&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>(our &lt;a href="http://marginalrevolution.com/marginalrevolution/2015/12/claire-adida-david-laitin-and-respond-to-my-review.html" target="_blank"&gt;response&lt;/a&gt;);<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="http://newramblerreview.com/book-reviews/economics/is-french-islam-an-oxymoron" target="_blank"&gt;Aziz Huq&lt;/a&gt;;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>Ethnic and Racial Studies; Sociology of Religion; Reviews in Religion and Theology; International Affairs; Journal of Race, Ethnicity, and Politics.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt;&lt;strong&gt;Media appearances:&lt;/strong&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="https://www.foreignaffairs.com/articles/united-states/2016-04-26/dont-fear-muslim-immigrants" target="_blank"&gt;Foreign Affairs&lt;/a&gt;,<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="http://www.researchonreligion.org/islam/claire-adida-on-discrimination-towards-muslims-in-france" target="_blank"&gt;Research on Religion&lt;/a&gt;,<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="https://www.youtube.com/watch?v=aPbAeF50dEA" target="_blank"&gt;The Hard Line&lt;/a&gt;,<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="http://www.abc.net.au/radionational/programs/religionandethicsreport/after-another-attack-in-france2c-what-prospects-for-muslim-int/6587382" target="_blank"&gt;Australian Broadcasting Service&lt;/a&gt;,<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="https://www.washingtonpost.com/news/monkey-cage/wp/2015/11/25/can-france-and-other-mostly-christian-societies-integrate-its-muslims-this-new-book-shows-what-must-be-done/" target="_blank"&gt;Monkey Cage Q&amp;A&lt;/a&gt;,<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="https://www.washingtonpost.com/blogs/monkey-cage/wp/2015/01/14/terror-in-france-implications-for-muslim-integration/" target="_blank"&gt;Monkey Cage&lt;/a&gt;,<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="https://www.nationalgeographic.com/science/phenomena/2010/11/22/fake-cvs-reveal-discrimination-against-muslims-in-french-job-market/" target="_blank"&gt;National Geographic&lt;/a&gt;.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="book"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="book-content"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="book-cover"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="http://www.cambridge.org/us/academic/subjects/politics-international-relations/african-government-politics-and-policy/immigrant-exclusion-and-insecurity-africa-coethnic-strangers" target="_blank"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;img src="uploads/1/2/6/5/12650228/published/cup-adida-immigrant.jpg" alt="Immigrant Exclusion and Insecurity in Africa"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="book-info"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="book-title"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="http://www.cambridge.org/us/academic/subjects/politics-international-relations/african-government-politics-and-policy/immigrant-exclusion-and-insecurity-africa-coethnic-strangers" target="_blank"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>Immigrant Exclusion and Insecurity in Africa: Coethnic Strangers</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;Cambridge University Press, 2014&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="book-details"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt;&lt;strong&gt;Reviewed by:&lt;/strong&gt; Crossings: Journal of Migration and Culture; Journal of Modern African Studies; International Journal of African Historical Studies;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="http://www.psqonline.org/article.cfm?IDArticle=19525" target="_blank"&gt;Political Science Quarterly&lt;/a&gt;.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt;&lt;strong&gt;Media appearances:&lt;/strong&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="http://janetdfoster.com/the-janet-foster-show/ep13-africa-immigration-trends/" target="_blank"&gt;The Janet Foster Show&lt;/a&gt;,<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="https://www.washingtonpost.com/news/monkey-cage/wp/2014/06/03/scapegoating-africas-immigrants/" target="_blank"&gt;Monkey Cage&lt;/a&gt;,<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="http://africasacountry.com/2016/10/many-untold-migration-stories/" target="_blank"&gt;Africa is a Country&lt;/a&gt;,<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="http://www.voanews.com/a/3588587.html" target="_blank"&gt;Daybreak Africa&lt;/a&gt; (~15 min. in),<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="http://www.aaihs.org/immigrant-exclusion-and-insecurity-in-africa-an-interview-with-claire-l-adida/" target="_blank"&gt;African American Intellectual History Society&lt;/a&gt;.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                        </span></p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt;&lt;strong&gt;Awards:&lt;/strong&gt; APCG 2014 Best Book Honorable Mention.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;&amp;copy; 2026 Claire L. Adida&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <div class="container">
+        <h1>Claire L. Adida</h1>
+        
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="cv.pdf">CV</a> |
+            <a href="articles.html">Articles</a> |
+            <a href="books.html">Books</a> |
+            <a href="teaching.html">Teaching</a> |
+            <a href="https://scholar.google.com/citations?user=Yf5lW8oAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a>
+        </nav>
+        
+        <div class="book">
+            <div class="book-content">
+                <div class="book-cover">
+                    <a href="http://www.hup.harvard.edu/catalog.php?isbn=9780674504929" target="_blank">
+                        <img src="uploads/1/2/6/5/12650228/published/hup-adida-muslim.jpg" alt="Why Muslim Integration Fails in Christian-Heritage Societies">
+                    </a>
+                </div>
+                <div class="book-info">
+                    <div class="book-title">
+                        <a href="http://www.hup.harvard.edu/catalog.php?isbn=9780674504929" target="_blank">
+                            Why Muslim Integration Fails in Christian-Heritage Societies
+                        </a>
+                    </div>
+                    <div>with David D. Laitin and Marie-Anne Valfort</div>
+                    <div>Harvard University Press, 2016</div>
+                    
+                    <div class="book-details">
+                        <p><strong>Reviewed by:</strong> Perspectives on Politics Review Symposium 
+                        (<a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/discussion-of-claire-l-adida-david-d-laitin-and-marieanne-valforts-why-muslim-integration-fails-in-christianheritage-societies/114812D25C65F92932BF62ADC3228687" target="_blank">Jamal</a>, 
+                        <a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/discussion-of-claire-l-adida-david-d-laitin-and-marieanne-valforts-why-muslim-integration-fails-in-christianheritage-societies/E1C418FC1596C1AD468F81251FC595E3" target="_blank">Norton</a>, 
+                        <a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/discussion-of-claire-l-adida-david-d-laitin-and-marieanne-valforts-why-muslim-integration-fails-in-christianheritage-societies/C1B7ACE5F3617DB6ED8C6A15525E7710" target="_blank">Sinno</a>) and our 
+                        <a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/response-and-rejoinders-to-symposium-on-why-muslim-integration-fails-in-christianheritage-societies/104C830C78C3E5E979D3D198DA141BE2" target="_blank">response/rejoinders</a>; 
+                        <a href="https://www.aeaweb.org/articles?id=10.1257/jel.20171415" target="_blank">Journal of Economic Literature</a>; 
+                        <a href="http://www.ft.com/cms/s/0/188fed1c-c5a6-11e5-808f-8231cd71622e.html" target="_blank">Financial Times</a>; 
+                        <a href="http://weekspopulation.blogspot.fr/2016/02/why-muslim-integration-fails-in.html" target="_blank">Dr. John Weeks</a>; 
+                        <a href="http://marginalrevolution.com/marginalrevolution/2015/12/why-muslim-integration-fails-in-christian-heritage-societies.html" target="_blank">Tyler Cowen</a> 
+                        (our <a href="http://marginalrevolution.com/marginalrevolution/2015/12/claire-adida-david-laitin-and-respond-to-my-review.html" target="_blank">response</a>); 
+                        <a href="http://newramblerreview.com/book-reviews/economics/is-french-islam-an-oxymoron" target="_blank">Aziz Huq</a>; 
+                        Ethnic and Racial Studies; Sociology of Religion; Reviews in Religion and Theology; International Affairs; Journal of Race, Ethnicity, and Politics.</p>
+                        
+                        <p><strong>Media appearances:</strong> 
+                        <a href="https://www.foreignaffairs.com/articles/united-states/2016-04-26/dont-fear-muslim-immigrants" target="_blank">Foreign Affairs</a>, 
+                        <a href="http://www.researchonreligion.org/islam/claire-adida-on-discrimination-towards-muslims-in-france" target="_blank">Research on Religion</a>, 
+                        <a href="https://www.youtube.com/watch?v=aPbAeF50dEA" target="_blank">The Hard Line</a>, 
+                        <a href="http://www.abc.net.au/radionational/programs/religionandethicsreport/after-another-attack-in-france2c-what-prospects-for-muslim-int/6587382" target="_blank">Australian Broadcasting Service</a>, 
+                        <a href="https://www.washingtonpost.com/news/monkey-cage/wp/2015/11/25/can-france-and-other-mostly-christian-societies-integrate-its-muslims-this-new-book-shows-what-must-be-done/" target="_blank">Monkey Cage Q&A</a>, 
+                        <a href="https://www.washingtonpost.com/blogs/monkey-cage/wp/2015/01/14/terror-in-france-implications-for-muslim-integration/" target="_blank">Monkey Cage</a>, 
+                        <a href="https://www.nationalgeographic.com/science/phenomena/2010/11/22/fake-cvs-reveal-discrimination-against-muslims-in-french-job-market/" target="_blank">National Geographic</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="book">
+            <div class="book-content">
+                <div class="book-cover">
+                    <a href="http://www.cambridge.org/us/academic/subjects/politics-international-relations/african-government-politics-and-policy/immigrant-exclusion-and-insecurity-africa-coethnic-strangers" target="_blank">
+                        <img src="uploads/1/2/6/5/12650228/published/cup-adida-immigrant.jpg" alt="Immigrant Exclusion and Insecurity in Africa">
+                    </a>
+                </div>
+                <div class="book-info">
+                    <div class="book-title">
+                        <a href="http://www.cambridge.org/us/academic/subjects/politics-international-relations/african-government-politics-and-policy/immigrant-exclusion-and-insecurity-africa-coethnic-strangers" target="_blank">
+                            Immigrant Exclusion and Insecurity in Africa: Coethnic Strangers
+                        </a>
+                    </div>
+                    <div>Cambridge University Press, 2014</div>
+                    
+                    <div class="book-details">
+                        <p><strong>Reviewed by:</strong> Crossings: Journal of Migration and Culture; Journal of Modern African Studies; International Journal of African Historical Studies; 
+                        <a href="http://www.psqonline.org/article.cfm?IDArticle=19525" target="_blank">Political Science Quarterly</a>.</p>
+                        
+                        <p><strong>Media appearances:</strong> 
+                        <a href="http://janetdfoster.com/the-janet-foster-show/ep13-africa-immigration-trends/" target="_blank">The Janet Foster Show</a>, 
+                        <a href="https://www.washingtonpost.com/news/monkey-cage/wp/2014/06/03/scapegoating-africas-immigrants/" target="_blank">Monkey Cage</a>, 
+                        <a href="http://africasacountry.com/2016/10/many-untold-migration-stories/" target="_blank">Africa is a Country</a>, 
+                        <a href="http://www.voanews.com/a/3588587.html" target="_blank">Daybreak Africa</a> (~15 min. in), 
+                        <a href="http://www.aaihs.org/immigrant-exclusion-and-insecurity-in-africa-an-interview-with-claire-l-adida/" target="_blank">African American Intellectual History Society</a>.</p>
+                        
+                        <p><strong>Awards:</strong> APCG 2014 Best Book Honorable Mention.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2026 Claire L. Adida</p>
+        </footer>
+    </div>
 </body>
 </html>
