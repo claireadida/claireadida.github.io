@@ -5,18 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teaching - Claire L. Adida</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
             font-family: Georgia, 'Times New Roman', serif;
             line-height: 1.6;
             color: #333;
             background-color: #fff;
-            margin: 0;
-            padding: 20px;
+            padding: 40px 20px;
         }
         
-        .container {
-            max-width: 800px;
+        .wrapper {
+            max-width: 1100px;
             margin: 0 auto;
+            display: flex;
+            gap: 30px;
+        }
+        
+        .main-content {
+            flex: 1;
+            max-width: 700px;
+        }
+        
+        .sidebar {
+            width: 180px;
+            flex-shrink: 0;
+            padding-top: 78px;
         }
         
         h1 {
@@ -28,19 +46,25 @@
         }
         
         nav {
-            margin: 20px 0 40px 0;
+            position: sticky;
+            top: 40px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 3px solid #333;
+            margin-top: 0;
         }
         
         nav a {
+            display: block;
             color: #333;
             text-decoration: none;
-            margin-right: 15px;
-            font-size: 1em;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+            transition: color 0.3s;
         }
         
         nav a:hover {
             color: #8B0000;
-            text-decoration: underline;
         }
         
         .info-box {
@@ -100,83 +124,87 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Claire L. Adida</h1>
-        
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="cv.pdf">CV</a> |
-            <a href="articles.html">Articles</a> |
-            <a href="books.html">Books</a> |
-            <a href="teaching.html">Teaching</a> |
-            <a href="https://scholar.google.com/citations?user=Yf5lW8oAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a>
-        </nav>
-        
-        <div class="info-box">
-            <p><strong>My office:</strong> Encina Hall C146</p>
-            <p><strong>My office hours:</strong> Sign up on <a href="https://calendar.app.google/2JCKxpPTVgoKzqr27" target="_blank">my booking page</a></p>
+    <div class="wrapper">
+        <div class="main-content">
+            <h1>Claire L. Adida</h1>
+            
+            <div class="info-box">
+                <p><strong>My office:</strong> Encina Hall C146</p>
+                <p><strong>My office hours:</strong> Sign up on <a href="https://calendar.app.google/2JCKxpPTVgoKzqr27" target="_blank">my booking page</a></p>
+            </div>
+            
+            <p>I have taught graduate and undergraduate courses at UC San Diego and Stanford University.</p>
+            
+            <h2>Graduate Courses</h2>
+            
+            <div class="course">
+                <strong>Migrant exclusion and inclusion around the world</strong><br>
+                <a href="uploads/1/2/6/5/12650228/adida_claire_--_politics_of_migrant_inclusion_and_exclusion_spring_2024.pdf" target="_blank">[syllabus]</a>
+            </div>
+            
+            <div class="course">
+                <strong>Politics of Diversity</strong> (Masters level)<br>
+                <a href="uploads/1/2/6/5/12650228/GPGN490_PolOfDiversity_FA20_Syllabus.docx" target="_blank">[asynchronous online]</a>
+            </div>
+            
+            <div class="course">
+                <strong>Best books in Comparative Politics</strong><br>
+                <a href="uploads/1/2/6/5/12650228/POLI229AdidaSpring2019Syllabus.pdf" target="_blank">[syllabus]</a>
+            </div>
+            
+            <div class="course">
+                <strong>State and Society</strong><br>
+                <a href="uploads/1/2/6/5/12650228/AdidaS&SWinter2017Syllabus.doc" target="_blank">[syllabus]</a>
+            </div>
+            
+            <div class="course">
+                <strong>Democracy</strong><br>
+                <a href="uploads/1/2/6/5/12650228/AdidaPopkin200BWinter2013.pdf" target="_blank">[syllabus]</a>
+            </div>
+            
+            <h2>Undergraduate Courses</h2>
+            
+            <div class="course">
+                <strong>Politics of Multiculturalism</strong><br>
+                <a href="uploads/1/2/6/5/12650228/POLI108SyllabusWinter2025.docx" target="_blank">[syllabus]</a>
+                <a href="uploads/1/2/6/5/12650228/POLI108RSyllabusFall2020.docx" target="_blank">[asynchronous online]</a>
+            </div>
+            
+            <div class="course">
+                <strong>Contention and Conflict in Africa</strong><br>
+                <a href="uploads/1/2/6/5/12650228/AdidaPOLI120NSyllabusWinter2016.pdf" target="_blank">[syllabus]</a>
+            </div>
+            
+            <div class="course">
+                <strong>Success Stories in Africa</strong><br>
+                <a href="uploads/1/2/6/5/12650228/adidapoli120pspring2016.pdf__" target="_blank">[syllabus]</a>
+            </div>
+            
+            <div class="course">
+                <strong>Immigrant Exclusion around the World</strong><br>
+                <a href="uploads/1/2/6/5/12650228/Adida_INT190Syllabus_Fall2018.pdf" target="_blank">[syllabus]</a>
+            </div>
+            
+            <div class="course">
+                <strong>African Politics</strong><br>
+                <a href="uploads/1/2/6/5/12650228/AdidaSyllabusPS246Fall2009.pdf" target="_blank">[syllabus]</a>
+            </div>
+            
+            <footer>
+                <p>&copy; 2026 Claire L. Adida</p>
+            </footer>
         </div>
         
-        <p>I have taught graduate and undergraduate courses at UC San Diego and Stanford University.</p>
-        
-        <h2>Graduate Courses</h2>
-        
-        <div class="course">
-            <strong>Migrant exclusion and inclusion around the world</strong><br>
-            <a href="uploads/1/2/6/5/12650228/adida_claire_--_politics_of_migrant_inclusion_and_exclusion_spring_2024.pdf" target="_blank">[syllabus]</a>
+        <div class="sidebar">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="cv.pdf">CV</a>
+                <a href="articles.html">Articles</a>
+                <a href="books.html">Books</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="https://scholar.google.com/citations?user=Yf5lW8oAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a>
+            </nav>
         </div>
-        
-        <div class="course">
-            <strong>Politics of Diversity</strong> (Masters level)<br>
-            <a href="uploads/1/2/6/5/12650228/GPGN490_PolOfDiversity_FA20_Syllabus.docx" target="_blank">[asynchronous online]</a>
-        </div>
-        
-        <div class="course">
-            <strong>Best books in Comparative Politics</strong><br>
-            <a href="uploads/1/2/6/5/12650228/POLI229AdidaSpring2019Syllabus.pdf" target="_blank">[syllabus]</a>
-        </div>
-        
-        <div class="course">
-            <strong>State and Society</strong><br>
-            <a href="uploads/1/2/6/5/12650228/AdidaS&SWinter2017Syllabus.doc" target="_blank">[syllabus]</a>
-        </div>
-        
-        <div class="course">
-            <strong>Democracy</strong><br>
-            <a href="uploads/1/2/6/5/12650228/AdidaPopkin200BWinter2013.pdf" target="_blank">[syllabus]</a>
-        </div>
-        
-        <h2>Undergraduate Courses</h2>
-        
-        <div class="course">
-            <strong>Politics of Multiculturalism</strong><br>
-            <a href="uploads/1/2/6/5/12650228/POLI108SyllabusWinter2025.docx" target="_blank">[syllabus]</a>
-            <a href="uploads/1/2/6/5/12650228/POLI108RSyllabusFall2020.docx" target="_blank">[asynchronous online]</a>
-        </div>
-        
-        <div class="course">
-            <strong>Contention and Conflict in Africa</strong><br>
-            <a href="uploads/1/2/6/5/12650228/AdidaPOLI120NSyllabusWinter2016.pdf" target="_blank">[syllabus]</a>
-        </div>
-        
-        <div class="course">
-            <strong>Success Stories in Africa</strong><br>
-            <a href="uploads/1/2/6/5/12650228/adidapoli120pspring2016.pdf__" target="_blank">[syllabus]</a>
-        </div>
-        
-        <div class="course">
-            <strong>Immigrant Exclusion around the World</strong><br>
-            <a href="uploads/1/2/6/5/12650228/Adida_INT190Syllabus_Fall2018.pdf" target="_blank">[syllabus]</a>
-        </div>
-        
-        <div class="course">
-            <strong>African Politics</strong><br>
-            <a href="uploads/1/2/6/5/12650228/AdidaSyllabusPS246Fall2009.pdf" target="_blank">[syllabus]</a>
-        </div>
-        
-        <footer>
-            <p>&copy; 2026 Claire L. Adida</p>
-        </footer>
     </div>
 </body>
 </html>
