@@ -82,14 +82,22 @@
         
         .gallery {
             margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
         }
         
         .gallery img {
             width: 100%;
-            max-width: 300px;
-            height: auto;
-            margin: 10px 10px 10px 0;
+            height: 200px;
+            object-fit: cover;
             border: 1px solid #ddd;
+        }
+        
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
         
         footer {
@@ -120,7 +128,7 @@
             <p>Senior Fellow, Center for Democracy, Development, and the Rule of Law</p>
             <p>Freeman Spogli Institute</p>
             <p>Professor (by courtesy), Political Science Department</p>
-            <p style="margin-top: 15px;"><a href="mailto:cadida@stanford.edu" class="email">cadida@stanford.edu</a></p>
+            <p style="margin-top: 15px;"><a href="mailto:adida@stanford.edu" class="email">adida@stanford.edu</a></p>
         </div>
         
         <div class="quick-links">
