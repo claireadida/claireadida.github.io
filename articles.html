@@ -126,18 +126,24 @@
             container.innerHTML = '';
             
             const groupedByYear = {};
+            const inProcessStatuses = ['In review', 'In preparation', 'Revise and Resubmit'];
             
             data.forEach(row => {
                 if (!row.Year || !row.Title) return;
                 
-                const year = row.Year.trim();
+                let year = row.Year.trim();
+                
+                if (inProcessStatuses.includes(year)) {
+                    year = 'In review process';
+                }
+                
                 if (!groupedByYear[year]) {
                     groupedByYear[year] = [];
                 }
                 groupedByYear[year].push(row);
             });
             
-            const yearOrder = ['In review', 'In preparation'];
+            const yearOrder = ['In review process'];
             const numericYears = Object.keys(groupedByYear)
                 .filter(y => !yearOrder.includes(y))
                 .sort((a, b) => {
