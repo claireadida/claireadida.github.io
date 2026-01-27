@@ -110,6 +110,58 @@
             color: #666;
             font-size: 0.9em;
         }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+            
+            .wrapper {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .sidebar {
+                padding-top: 0;
+                width: 100%;
+            }
+            
+            nav {
+                position: static;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            
+            nav a {
+                display: inline-block;
+                margin-bottom: 0;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .info p {
+                font-size: 0.95em;
+            }
+            
+            .bio {
+                font-size: 1em;
+                text-align: left;
+            }
+            
+            .gallery {
+                overflow-x: auto;
+                justify-content: flex-start;
+                gap: 8px;
+            }
+            
+            .gallery img {
+                width: 80px;
+                height: 80px;
+            }
+        }
     </style>
 </head>
 <body>
