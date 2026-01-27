@@ -139,13 +139,51 @@
             font-size: 0.9em;
         }
         
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+            
+            .wrapper {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .sidebar {
+                padding-top: 0;
+                width: 100%;
+            }
+            
+            nav {
+                position: static;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            
+            nav a {
+                display: inline-block;
+                margin-bottom: 0;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
             .book-content {
                 flex-direction: column;
             }
             
             .book-cover img {
-                width: 120px;
+                width: 150px;
+            }
+            
+            .book-title {
+                font-size: 1.1em;
+            }
+            
+            .book-details {
+                font-size: 0.95em;
             }
         }
     </style>
