@@ -107,6 +107,46 @@
             color: #666;
             font-size: 0.9em;
         }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+            
+            .wrapper {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .sidebar {
+                padding-top: 0;
+                width: 100%;
+            }
+            
+            nav {
+                position: static;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            
+            nav a {
+                display: inline-block;
+                margin-bottom: 0;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            h2 {
+                font-size: 1.2em;
+            }
+            
+            .publication {
+                font-size: 0.95em;
+            }
+        }
     </style>
 </head>
 <body>
